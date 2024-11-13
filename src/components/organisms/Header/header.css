@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #68b35c;
+  }
+  
+  .header .logo-app {
+    font-size: 20px;
+    font-weight: bold;
+    color: white; 
+    margin: 0px;
+  }
+  
+  .blog-title {
+    font-family: 'Playfair Display', serif; /* Font yang stylish */
+    font-size: 2.5rem;
+    color: #6D597A; /* Warna yang soft */
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+    background: linear-gradient(135deg, #f5b489, #6ce3b8);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+  }
+  
+  .blog-title:hover {
+    color: #355070; /* Warna yang lebih gelap untuk efek hover */
+    transform: scale(1.05); /* Sedikit zoom saat hover */
+    transition: all 0.3s ease-in-out;
+  }
+  
