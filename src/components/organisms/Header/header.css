@@ -4,16 +4,19 @@
     align-items: center;
     padding: 20px 40px;
     background-color: #68b35c;
-  }
-  
-  .header .logo-app {
+    width: 100%; /* Header tetap memanjang sesuai lebar layar */
+    max-width: 100%; /* Pastikan header bisa lebih lebar dari post item */
+    box-sizing: border-box; /* Menghindari overflow */
+}
+
+.header .logo-app {
     font-size: 20px;
     font-weight: bold;
-    color: white; 
-    margin: 0px;
-  }
-  
-  .blog-title {
+    color: white;
+    margin: 0;
+}
+
+.blog-title {
     font-family: 'Playfair Display', serif; /* Font yang stylish */
     font-size: 2.5rem;
     color: #6D597A; /* Warna yang soft */
@@ -24,11 +27,13 @@
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     letter-spacing: 2px;
-  }
-  
-  .blog-title:hover {
+    width: 100%; /* Header menggunakan lebar penuh */
+    max-width: 1400px; /* Lebar maksimal header lebih besar daripada post item */
+    margin: 0 auto; /* Centering untuk memastikan berada di tengah */
+}
+
+.blog-title:hover {
     color: #355070; /* Warna yang lebih gelap untuk efek hover */
     transform: scale(1.05); /* Sedikit zoom saat hover */
     transition: all 0.3s ease-in-out;
-  }
-  
+}

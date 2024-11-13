@@ -1,8 +1,15 @@
 import './postItem.css';
 import { Button, Gap } from '../../atoms';
+import { useState } from 'react';
 
 function PostItem(props) {
-    const { image, title, name, date, body } = props;
+    const { image, title, name, date, body, onDelete } = props;
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    // Fungsi untuk mengubah status expand/collapse
+    const toggleBody = () => {
+        setIsExpanded(!isExpanded);
+    };
 
     return (
         <div className='blog-item'>
@@ -13,11 +20,18 @@ function PostItem(props) {
                     <div className='edit-wrapper'>
                         <Button title='Edit' />
                         <Gap width={10} />
-                        <Button title='Hapus' />
+                        <Button title='Hapus' onClick={onDelete}/>
                     </div>
                 </div>
                 <p className='author'>{name} - {date}</p>
-                <p className='body'>{body}</p>
+                <p className='body'>
+                    {isExpanded ? body : `${body.slice(0, 100)}... `}
+                    <span 
+                        className='read-more' 
+                        onClick={toggleBody}>
+                        {isExpanded ? 'Tutup' : 'Baca Selengkapnya'}
+                    </span>
+                </p>
                 <Button title="Lihat Detail" />
             </div>
         </div>
