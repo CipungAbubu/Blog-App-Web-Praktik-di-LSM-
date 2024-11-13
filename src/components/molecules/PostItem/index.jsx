@@ -1,6 +1,7 @@
 import './postItem.css';
 import { Button, Gap } from '../../atoms';
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 function PostItem(props) {
     const { image, title, name, date, body, onDelete } = props;
@@ -32,7 +33,9 @@ function PostItem(props) {
                         {isExpanded ? 'Tutup' : 'Baca Selengkapnya'}
                     </span>
                 </p>
-                <Button title="Lihat Detail" />
+                <NavLink to="/post-detail">
+                     <Button title="Lihat Detail" />
+                </NavLink>
             </div>
         </div>
     );

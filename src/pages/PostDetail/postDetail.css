@@ -1,0 +1,58 @@
+.detail-blog-wrapper .img-container {
+    display: flex;
+    gap: 10px; /* Memberikan jarak antar gambar */
+  }
+
+.detail-blog-wrapper .img-cover {
+    width: 33.5%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .detail-blog-wrapper .blog-title {
+    margin: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2d2d2d;
+    margin-top: 20px;
+    width: 98%;
+  }
+  
+  .detail-blog-wrapper .blog-author {
+    margin: 0px;
+    font-size: 16px;
+    color: grey; 
+  }
+  
+  .detail-blog-wrapper .blog-body {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .detail-blog-wrapper .album-list {
+    margin-top: 20px;
+  }
+  
+  .detail-blog-wrapper .album-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+  }
+  
+  .detail-blog-wrapper .albums {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .detail-blog-wrapper .album-item {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .detail-blog-wrapper .album-item:hover {
+    color: #68b35c; /* Efek hover warna hijau */
+  }
+  

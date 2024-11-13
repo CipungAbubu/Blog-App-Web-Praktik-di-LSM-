@@ -32,7 +32,7 @@ function Home() {
       <Gap height={20} />
       <div className="content-wrapper">
       <PostItem
-        image="/images/photo1.jpg"
+        image="/images/photo1.jpg" alt="800"
         title="DREAM Squad"
         name="NCT DREAM"
         date="17 Aug 2016" // Tanggal debut
@@ -42,7 +42,7 @@ function Home() {
         onDelete={() => handleDelete()}
       />
       <PostItem
-        image="/images/photo2.jpg"
+        image="/images/photo2.jpg" alt="800"
         title="The 127 Revolution"
         name="NCT 127"
         date="7 Jul 2016" // Tanggal debut
@@ -50,7 +50,7 @@ function Home() {
         onDelete={() => handleDelete()}
       />
       <PostItem
-        image="/images/photo3.jpg"
+        image="/images/photo3.jpg" alt="800"
         title="Chinese Unit"
         name="WayV"
         date="17 Jan 2019" // Tanggal debut
@@ -58,7 +58,7 @@ function Home() {
         onDelete={() => handleDelete()}
       />
       <PostItem
-        image="/images/photo4.jpg"
+        image="/images/photo4.jpg" alt="800"
         title="Dreams and Wishes"
         name="NCT WISH"
         date="TBA" // Tanggal debut belum ditentukan
